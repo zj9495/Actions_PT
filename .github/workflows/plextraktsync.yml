@@ -11,14 +11,15 @@ jobs:
     build:
         runs-on: ubuntu-latest
         if: github.event.repository.owner.id == github.event.sender.id
+        env:
+          SET_ENV: ${{ secrets.SET_ENV }}
+          SET_PYTRAKT: ${{ secrets.SET_PYTRAKT }}
         steps:
             - name: Checkout
               run: |
                 git clone -b plexmovieagent-fixed https://github.com/Taxel/PlexTraktSync.git ~/trakt
             
             - name: "Set up env config"
-              env:
-              	SET_ENV: ${{ secrets.SET_ENV }}
               run: |
                 # 写入 env 配置文件
                 cat << EOF > ~/trakt/.env
@@ -26,8 +27,6 @@ jobs:
                 EOF
             
             - name: "Set up pytrakt config"
-              env:
-              	SET_PYTRAKT: ${{ secrets.SET_PYTRAKT }}
               run: |
                 # 写入 pytrakt 配置文件
                 cat << EOF > ~/trakt/.pytrakt.json

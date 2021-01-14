@@ -48,3 +48,8 @@ jobs:
               run: |
                 cd ~/trakt
                 python3 main.py
+            
+            - name: "查看日志"
+              run: |
+                cd ~/trakt
+                tail last_update.log

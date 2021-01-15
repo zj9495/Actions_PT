@@ -37,11 +37,11 @@
 
 | name          | secrets                                              | No.  |
 | :------------ | :--------------------------------------------------- | :--: |
-| CLIENT_ID     | 应用程序(客户端) ID                                  |  1   |
-| CLIENT_SECRET | 证书和密码中的"客户端密码"                           |  3   |
-| TENANT_GUID   | 目录(租户) ID                                        |  2   |
-| USERNAME      | 登录Microsoft Azure的账号(xxxx@xxxx.onmicrosoft.com) |      |
-| PASSWORD      | 登录Microsoft Azure的密码                            |      |
+| E5_CLIENT_ID     | 应用程序(客户端) ID                                  |  1   |
+| E5_CLIENT_SECRET | 证书和密码中的"客户端密码"                           |  3   |
+| E5_TENANT_GUID   | 目录(租户) ID                                        |  2   |
+| E5_USERNAME      | 登录Microsoft Azure的账号(xxxx@xxxx.onmicrosoft.com) |      |
+| E5_PASSWORD      | 登录Microsoft Azure的密码                            |      |
 
 ## 本地
 

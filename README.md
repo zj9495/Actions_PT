@@ -1,4 +1,4 @@
-# Actions_Plex
+# PlexTraktSync
 Actions that syncs the movies, shows and ratings between trakt and Plex (without needing a PlexPass or Trakt VIP subscription)
 
 # Secrets

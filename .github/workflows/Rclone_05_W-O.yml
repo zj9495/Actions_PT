@@ -1,4 +1,4 @@
-name: Rclone_05 W copy to O
+name: Rclone_05 W sync to O
 
 on:
   workflow_dispatch:
@@ -47,5 +47,5 @@ jobs:
           sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           
           echo "开始同步【W】至【O】"
-          rclone copy W:/A O:/"00 中转"/ACG/A -v
-          echo "【W】已复制至【O】"
+          rclone sync W:/A O:/"00 中转"/ACG/A -v
+          echo "【W】已同步至【O】"

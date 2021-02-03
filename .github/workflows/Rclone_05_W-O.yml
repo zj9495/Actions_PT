@@ -55,3 +55,5 @@ jobs:
           echo "开始同步【C】"
           rclone sync W:/C O:/"00 中转"/ACG/C -v
           echo "【C】已同步"
+          rclone sync W:/D O:/"00 中转"/ACG/D -v
+          echo "【D】已同步"

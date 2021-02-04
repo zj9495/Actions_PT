@@ -47,13 +47,15 @@ jobs:
           sudo cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
           
           echo "开始同步【A】"
-          rclone sync W:/A O:/"00 中转"/ACG/A -v
+          rclone sync W:/A O:/"00 中转"/ACG/A
           echo "【A】已同步"
           echo "开始同步【B】"
-          rclone sync W:/B O:/"00 中转"/ACG/B -v
+          rclone sync W:/B O:/"00 中转"/ACG/B
           echo "【B】已同步"
           echo "开始同步【C】"
-          rclone sync W:/C O:/"00 中转"/ACG/C -v
+          rclone sync W:/C O:/"00 中转"/ACG/C
           echo "【C】已同步"
-          rclone sync W:/D O:/"00 中转"/ACG/D -v
+          rclone sync W:/D O:/"00 中转"/ACG/D
           echo "【D】已同步"
+          rclone sync W:/E O:/"00 中转"/ACG/E -v
+          echo "【E】已同步"

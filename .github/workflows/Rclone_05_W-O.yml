@@ -65,5 +65,8 @@ jobs:
           rclone sync W:/F O:/"00 中转"/ACG/F
           echo "【F】已同步"
           echo "开始同步【G】"
-          rclone sync W:/G O:/"00 中转"/ACG/G -v
+          rclone sync W:/G O:/"00 中转"/ACG/G
           echo "【G】已同步"
+          echo "开始同步【H】"
+          rclone sync W:/H O:/"00 中转"/ACG/H -v
+          echo "【H】已同步"
